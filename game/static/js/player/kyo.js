@@ -14,7 +14,7 @@ export class Kyo extends Player {
 
         for (let i = 0 ; i < 7 ; i ++) {
             let gif = GIF();
-            gif.load(`/static/images/player/kyo/${i}.gif`);
+            gif.load(`/static/image/player/kyo/${i}.gif`);
             this.animations.set(i, {
                 gif: gif,
                 frame_cnt: 0,
