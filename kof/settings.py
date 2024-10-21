@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ["47.121.137.60","app7213.acapp.acwing.com.cn"]
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
     'game.apps.GameConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -40,6 +41,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+# REST_FRAMEWORK
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        # 'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.AllowAny',
+    ],
+    # 'DEFAULT_AUTHENTICATION_CLASSES': (
+    #     'rest_framework_simplejwt.authentication.JWTAuthentication',
+    # )
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
